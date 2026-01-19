@@ -137,7 +137,7 @@ const ChatScreen = ({ route, navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.header}>
-                <TouchableOpacity onPress={() => navigation.goBack()}>
+                <TouchableOpacity onPress={() => navigation.navigate('Projects')}>
                     <MaterialCommunityIcons name="chevron-left" color={COLORS.text} size={28} />
                 </TouchableOpacity>
                 <View style={styles.headerTitleContainer}>

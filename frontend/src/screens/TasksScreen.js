@@ -192,4 +192,58 @@ const styles = StyleSheet.create({
         elevation: 2,
     },
     cardContent: {
-   
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 12,
+    },
+    taskLeft: { flexDirection: 'row', alignItems: 'center', flex: 1 },
+    taskTextContainer: { marginLeft: 8, flex: 1 },
+    taskTitle: { color: COLORS.white, fontSize: 15, fontWeight: '600' },
+    completedText: { textDecorationLine: 'line-through', color: COLORS.textSecondary },
+    taskMeta: { flexDirection: 'row', alignItems: 'center', marginTop: 4 },
+    priorityBadge: {
+        paddingHorizontal: 8,
+        paddingVertical: 2,
+        borderRadius: 4,
+        marginRight: 10,
+    },
+    priorityText: { color: COLORS.white, fontSize: 10, fontWeight: 'bold' },
+    metaText: { color: COLORS.textSecondary, fontSize: 11 },
+    // Empty State Styles
+    emptyContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 40,
+        backgroundColor: COLORS.background,
+    },
+    emptyTitle: {
+        fontSize: 22,
+        fontWeight: 'bold',
+        color: COLORS.white,
+        marginTop: 20,
+        textAlign: 'center',
+    },
+    emptySubtitle: {
+        fontSize: 14,
+        color: COLORS.textSecondary,
+        textAlign: 'center',
+        marginTop: 10,
+        lineHeight: 22,
+    },
+    selectButton: {
+        marginTop: 30,
+        paddingHorizontal: 24,
+        paddingVertical: 12,
+        backgroundColor: COLORS.primary,
+        borderRadius: 12,
+    },
+    selectButtonText: {
+        color: COLORS.white,
+        fontSize: 16,
+        fontWeight: 'bold',
+    },
+});
+
+export default TasksScreen;
